@@ -1,0 +1,218 @@
+﻿@page
+@model IndexModel
+@{
+    @* ViewData["Title"] = "Home page"; *@
+}
+
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' *.coronatest.nl; connect-src 'self' *.coronatest.nl *.test-cloud.topicus-synaps.nl https://login.ggdghor.nl/">
+    <meta name="referrer" content="origin">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <title>Coronatest.nl - Klachten? Maak een afspraak voor een coronatest</title>
+    <meta name="description"
+        content="Heeft u klachten zoals verkoudheid, hoesten, verhoging of plotseling verlies van smaak of reuk? Laat u dan zo snel mogelijk testen op het coronavirus.">
+    <meta name="og:title" content="Coronatest.nl - Klachten? Maak een afspraak voor een coronatest">
+    <meta name="og:description"
+        content="Heeft u klachten zoals verkoudheid, hoesten, verhoging of plotseling verlies van smaak of reuk? Laat u dan zo snel mogelijk testen op het coronavirus.">
+    <meta name="og:url" content="https://www.coronatest.nl">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="images/share.png">
+    <meta name="twitter:title" content="Coronatest.nl - Klachten? Maak een afspraak voor een coronatest">
+    <meta name="twitter:description"
+        content="Heeft u klachten zoals verkoudheid, hoesten, verhoging of plotseling verlies van smaak of reuk? Laat u dan zo snel mogelijk testen op het coronavirus.">
+    <meta name="twitter:url" content="https://www.coronatest.nl">
+    <meta name="twitter:image" content="images/share.png">
+    <meta name="twitter:card" content="summary">
+    <base href="/">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Load environment variables -->
+    <script src="~/js/env.js"></script>
+
+
+    @* <link rel="stylesheet" href="D:\VSCode projecten\GGD Wesbite\GGD\wwwroot\css\site.css"> *@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+    <link rel="stylesheet" href="~/css/styles.46be9d0a224ece05.css" asp-append-version="true" />
+</head>
+
+<body>
+    <app-root ng-version="13.3.6">
+        <div class="grid-container vertical-direction main-container"><img src="images/ro-logo.svg" class="logo"
+                alt="Logo Rijksoverheid" title="Logo Rijksoverheid">
+            <div class="router-outlet-container">
+                <router-outlet></router-outlet>
+                <app-home>
+                    <div class="homepage">
+                        <div class="home-header">
+                            <div class="grid-container fixed-width-container align-center vertical-direction"><img
+                                    src="images/alleen-samen.svg" alt="alleen samen krijgen we corona onder controle"
+                                    title="alleen samen krijgen we corona onder controle" class="alleen-samen">
+                                <ul class="lang-switch">
+                                    <li class="active"><button title="Nederlands"
+                                            class="button button-link button-black">NL</button></li>
+                                    <li><button title="English" class="button button-link button-black">EN</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="fixed-width-container grid-container horizontal-direction home column-container three-columns">
+                            <div
+                                class="column-block button-container home-container grid-container vertical-direction flex-start">
+                                <div class="block-shadow">
+                                    <div class="intro-text fixed-height">
+                                        <h2><span class="ro-icon ro-icon-coronatest"></span> Coronatest</h2>
+                                        <div class="intro-text-inner">
+                                            <p>Maak hier een afspraak voor een test bij een GGD testplaats in de buurt.
+                                                De test is gratis.</p><button class="button button-link mobile-only"
+                                                title="Lees meer">Lees meer</button>
+                                            <!---->
+                                            <div class="hidden-on-mobile">
+                                                <p>Meer weten over het testen op corona? Kijk op <a target="_blank"
+                                                        rel="noopener" href="http://www.rijksoverheid.nl/coronatest"
+                                                        title="rijksoverheid.nl">rijksoverheid.nl</a>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons vertical-direction"><button type="button"
+                                        routerlink="/ik-wil-me-laten-testen" class="button button-primary with-icon"
+                                        tabindex="0" title="Ik wil me laten testen"><span
+                                            class="ro-icon ro-icon-coronatest"></span><span class="text-label">Ik wil me
+                                            laten testen</span><span class="spacer"></span></button>
+                                            <button type="button" class="button button-primary with-icon" tabindex="0"
+                                                title="Mijn testafspraak of uitslag"><span class="ro-icon ro-icon-activity"></span><span class="text-label"><a href="https://@HttpContext.Request.Host.Value/privacy">Mijn
+                                                    testafspraak of uitslag</a></span><span class="spacer"></span>
+                                                    </button></div>
+                                                    
+                            </div>
+                            <div
+                                class="column-block button-container home-container grid-container vertical-direction flex-start">
+                                <div class="block-shadow">
+                                    <div class="intro-text fixed-height">
+                                        <h2><span class="ro-icon ro-icon-inenting"></span> Vaccinatie</h2>
+                                        <div class="intro-text-inner">
+                                            <p>Wilt u zich laten vaccineren tegen corona?</p><button
+                                                class="button button-link mobile-only" title="Lees meer">Lees
+                                                meer</button>
+                                            <!---->
+                                            <div class="hidden-on-mobile">
+                                                <p>Maak hier een afspraak voor vaccinatie bij een GGD-priklocatie in de
+                                                    buurt. Meer weten over vaccineren tegen corona? Kijk op <a
+                                                        target="_blank" rel="noopener"
+                                                        href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie"
+                                                        title="coronavaccinatie.nl">coronavaccinatie.nl</a>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons vertical-direction"><button type="button"
+                                        routerlink="/ik-wil-me-laten-vaccineren" class="button button-primary with-icon"
+                                        tabindex="0" title="Ik wil me laten vaccineren"><span
+                                            class="ro-icon ro-icon-inenting"></span><span class="text-label">Ik wil me
+                                            laten vaccineren</span><span class="spacer"></span></button><button
+                                        type="button" routerlink="/inloggen" class="button button-primary with-icon"
+                                        tabindex="0" title="Mijn vaccinatieafspraken inzien"><span
+                                            class="ro-icon ro-icon-activity"></span><span class="text-label">Mijn
+                                            vaccinatieafspraken inzien</span><span class="spacer"></span></button></div>
+                            </div>
+                            <div
+                                class="column-block button-container home-container grid-container vertical-direction flex-start vraag-antwoord">
+                                <div class="block-shadow">
+                                    <div class="intro-text fixed-height">
+                                        <h2><span class="ro-icon-v2 ro-icon-v2-2016-vraag-en-antwoord"></span> Vragen en
+                                            antwoorden</h2>
+                                        <div class="intro-text-inner">
+                                            <p>Heeft u een vraag omdat u of iemand uit uw omgeving (misschien) corona
+                                                heeft? Klik dan op de volgende link.</p>
+                                            <p><a target="_blank" rel="noopener"
+                                                    href="https://vragen.coronatest.nl/vraag-en-antwoord/coronabesmetting/"
+                                                    title="Ik heb (misschien) corona. Wat nu?">Ik heb (misschien)
+                                                    corona. Wat nu?</a></p>
+                                            <p>Heeft u een andere vraag? Bijvoorbeeld over testen, vaccineren of het
+                                                Digitaal Corona Certificaat (DCC)?</p>
+                                            <p>Kijk op <a target="_blank" href="https://vragen.coronatest.nl/"
+                                                    title="vragen.coronatest.nl">vragen.coronatest.nl</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="digid-wrapper home">
+                            <!---->
+                            <div class="digid">
+                                <div class="fixed-width-container grid-container vertical-direction">
+                                    <div class="digid-container"><img src="images/digid.svg" alt="DigiD" title="DigiD"
+                                            class="digid-logo">
+                                        <div class="digid-text">
+                                            <h3>Je logt in met DigiD.</h3>
+                                            <p>Gebruik hiervoor je inloggegevens van DigiD.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <app-footer>
+                            <div class="footer">
+                                <div class="fixed-width-container grid-container vertical-direction">
+                                    <div class="footer-container grid-container horizontal-direction">
+                                        <div class="footer-menu-container">
+                                            <h4>Coronatest.nl</h4>
+                                            <ul class="footer-menu">
+                                                <li><span class="ro-icon ro-icon-chevron-right"></span><a
+                                                        routerlink="/info/over-deze-website"
+                                                        class="button button-link button-grey" title="Over deze website"
+                                                        href="/info/over-deze-website">Over deze website</a></li>
+                                                <li><span class="ro-icon ro-icon-chevron-right"></span><a
+                                                        routerlink="/info/cookies"
+                                                        class="button button-link button-grey" title="Cookies"
+                                                        href="/info/cookies">Cookies</a></li>
+                                                <li><span class="ro-icon ro-icon-chevron-right"></span><a
+                                                        routerlink="/info/privacy"
+                                                        class="button button-link button-grey" title="Privacy"
+                                                        href="/info/privacy">Privacy</a></li>
+                                                <li><span class="ro-icon ro-icon-chevron-right"></span><a
+                                                        routerlink="/info/toegankelijkheid"
+                                                        class="button button-link button-grey" title="Toegankelijkheid"
+                                                        href="/info/toegankelijkheid">Toegankelijkheid</a></li>
+                                                <li><span class="ro-icon ro-icon-chevron-right"></span><a
+                                                        routerlink="/info/auteursrechten"
+                                                        class="button button-link button-grey" title="Auteursrechten"
+                                                        href="/info/auteursrechten">Auteursrechten</a></li>
+                                                <li><a target="_blank" rel="noopener"
+                                                        class="button button-link button-grey"
+                                                        title="Vragen en klachten"
+                                                        href="https://vragen.coronatest.nl/">Vragen en klachten</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </app-footer>
+                    </div>
+                    <!---->
+                    <!---->
+                </app-home>
+                <!---->
+                <!---->
+                <!---->
+            </div>
+        </div>
+        <!---->
+        <!---->
+    </app-root>
+    <script src="GGD\wwwroot\js\811.09c386599b465e90.js" type="module"></script>
+    <script src="https://coronatest.nl//polyfills.adcb31910d57ffe9.js" type="module"></script>
+    <script src="https://coronatest.nl//main.c6a49908d1d07195.js" type="module"></script>
+
+</body>
+
+</html>

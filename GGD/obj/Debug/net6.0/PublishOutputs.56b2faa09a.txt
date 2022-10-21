@@ -1,0 +1,7 @@
+D:\VSCode projecten\GGD Wesbite\GGD\bin\Debug\net6.0\publish\GGD.exe
+D:\VSCode projecten\GGD Wesbite\GGD\bin\Debug\net6.0\publish\appsettings.Development.json
+D:\VSCode projecten\GGD Wesbite\GGD\bin\Debug\net6.0\publish\appsettings.json
+D:\VSCode projecten\GGD Wesbite\GGD\bin\Debug\net6.0\publish\GGD.dll
+D:\VSCode projecten\GGD Wesbite\GGD\bin\Debug\net6.0\publish\GGD.deps.json
+D:\VSCode projecten\GGD Wesbite\GGD\bin\Debug\net6.0\publish\GGD.runtimeconfig.json
+D:\VSCode projecten\GGD Wesbite\GGD\bin\Debug\net6.0\publish\GGD.pdb
