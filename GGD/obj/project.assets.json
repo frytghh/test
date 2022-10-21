@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VSCode projecten\\GGD Wesbite\\GGD\\GGD.csproj",
+      "projectUniqueName": "d:\\Github\\test\\GGD\\GGD.csproj",
       "projectName": "GGD",
-      "projectPath": "D:\\VSCode projecten\\GGD Wesbite\\GGD\\GGD.csproj",
+      "projectPath": "d:\\Github\\test\\GGD\\GGD.csproj",
       "packagesPath": "C:\\Users\\yaqub\\.nuget\\packages\\",
-      "outputPath": "D:\\VSCode projecten\\GGD Wesbite\\GGD\\obj\\",
+      "outputPath": "d:\\Github\\test\\GGD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
